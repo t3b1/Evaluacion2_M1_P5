@@ -2,6 +2,7 @@ const palabraAleatoria = 10;
 const time = 10;
 const score = 0;
 
+
 const words = [
     'californication',
     'plataforma5',
@@ -25,10 +26,10 @@ const words = [
 ];
 
 
-function randomWords(palabraaleatoria) {
+function randomWords(aleatorio) {
 
-     resul =  Math.random(palabraaleatoria.length);
-    
+    resul = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+
     return resul;
 }
 
