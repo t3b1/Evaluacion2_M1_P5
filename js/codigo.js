@@ -1,4 +1,4 @@
-const palabraAleatoria = 10;
+let palabraAleatoria = "";
 const time = 10;
 const score = 0;
 
@@ -24,12 +24,15 @@ const words = [
     'chili'
 ];
 
+addToDOM(words);
 
-function randomWords(palabraaleatoria) {
-
-     resul =  Math.random(palabraaleatoria.length);
-    
-    return resul;
+function randomWords(aleatorio) {
+    palabraAleatoria = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+    return palabraAleatoria;
 }
 
-console.log(randomWords(words))
+function addToDOM(w){
+    const etiq_h1 = document.querySelector("#randomWord");
+    etiq_h1.textContent = randomWords(w);
+}
+
