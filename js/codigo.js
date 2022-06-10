@@ -1,6 +1,10 @@
+//variables globales
 let palabraAleatoria = "";
 const time = 10;
 const score = 0;
+
+//variable de etiqueta
+const input = document.querySelector("#text")
 
 const words = [
     'californication',
@@ -31,8 +35,22 @@ function randomWords(aleatorio) {
     return palabraAleatoria;
 }
 
-function addToDOM(word){
+function addToDOM(word) {
     const etiq_h1 = document.querySelector("#randomWord");
     etiq_h1.textContent = randomWords(word);
 }
 
+// inicio del juego
+
+input.addEventListener("keyup", function(e) {
+        if (e.keyCode == 13) {
+            if (input.value == palabraAleatoria) {
+                time += 3
+            }
+
+            addToDOM(words)
+
+        }
+    }
+
+)
