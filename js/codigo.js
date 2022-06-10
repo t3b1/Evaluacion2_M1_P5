@@ -28,7 +28,7 @@ const words = [
 addToDOM(words);
 
 function randomWords(aleatorio) {
-<<<<<<< HEAD
+
     palabraAleatoria = aleatorio[Math.floor(Math.random() * aleatorio.length)];
     return palabraAleatoria;
 }
@@ -38,7 +38,7 @@ function addToDOM(w){
     etiq_h1.textContent = randomWords(w);
 }
 
-=======
+
 
     resul = aleatorio[Math.floor(Math.random() * aleatorio.length)];
 
@@ -46,4 +46,3 @@ function addToDOM(w){
 }
 
 console.log(randomWords(words))
->>>>>>> f84de5fe4dc3a4b6f790b9dcf22843b3b695f23a
