@@ -1,7 +1,10 @@
+//variables globales
 let palabraAleatoria = "";
-const time = 10;
-const score = 0;
+let time = 10;
+let score = 0;
 
+//variable de etiqueta
+const input = document.querySelector("#text")
 
 const words = [
     'californication',
@@ -28,21 +31,25 @@ const words = [
 addToDOM(words);
 
 function randomWords(aleatorio) {
-
     palabraAleatoria = aleatorio[Math.floor(Math.random() * aleatorio.length)];
     return palabraAleatoria;
 }
 
-function addToDOM(w){
+function addToDOM(word) {
     const etiq_h1 = document.querySelector("#randomWord");
-    etiq_h1.textContent = randomWords(w);
+    etiq_h1.textContent = randomWords(word);
 }
 
 
+input.addEventListener("keyup", function(e) {
+        if (e.keyCode == 13) {
+            if (input.value == palabraAleatoria) {
+                time += 3
+            }
 
-    resul = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+            addToDOM(words)
+        }
+    }
 
-    return resul;
-}
+)
 
-console.log(randomWords(words))
