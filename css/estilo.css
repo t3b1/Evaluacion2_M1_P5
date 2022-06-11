@@ -9,20 +9,20 @@ body {
 }
 
 .container {
-    width: 300px;
-    height: 50px;
+    width: 18.75rem;
+    height: 3.125rem;
     background: red;
     position: relative;
-    margin-left: 400px;
+    margin-left: 25rem;
     animation: mymove 5s infinite;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 2.5rem;
 }
 
 h2 {
-    padding-top: 10px;
-    font-size: 30 px;
-    text-shadow: 1px 2px 2px blueviolet;
+    padding-top: 0.625rem;
+    font-size: 1.875rem;
+    text-shadow: 0.063rem 0.125rem 0.125rem blueviolet;
 }
 
 @keyframes mymove {
@@ -54,23 +54,23 @@ h2 {
 }
 
 .main {
-    height: 250px;
-    width: 300px;
-    background-color: rgba(240, 248, 255, 0.23);
-    margin: 80px 0 0 440px;
+    height: 15.625rem;
+    width: 18.75rem;
+    background-color: rgba(240, 248, 255, 0.051);
+    margin: 5rem 0 0 27.5rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
 #end-game-container {
-    height: 250px;
-    width: 300px;
-    margin: 80px 0 0 440px;
+    height: 15.625rem;
+    width: 18.75rem;
+    margin: 5rem 0 0 27.5rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
