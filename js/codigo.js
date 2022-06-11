@@ -49,6 +49,7 @@ input.addEventListener("keyup", function(e) {
             if (input.value == palabraAleatoria) {
                 time += 3
                 document.getElementById("text").value = "";
+                updateScore();
             }else{
                 document.getElementById("text").value = "";
             }
