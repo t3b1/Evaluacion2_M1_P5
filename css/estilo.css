@@ -5,6 +5,7 @@ body {
     background-image: url(https://media.istockphoto.com/photos/unique-design-abstract-digital-pixel-noise-glitch-error-video-damage-picture-id845869662?k=20&m=845869662&s=612x612&w=0&h=IlYELzW8Ptb0BU4ziUvOpwmkfqq1kD4tRZJjKh5nHEc=);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 .container {
@@ -64,4 +65,12 @@ h2 {
 p {
     font-size: 20px;
     font-weight: bold;
+}
+
+#end-game-container {
+    height: 250px;
+    width: 300px;
+    margin: 80px 0 0 440px;
+    text-align: center;
+    padding-top: 20px;
 }
