@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://media.istockphoto.com/photos/unique-design-abstract-digital-pixel-noise-glitch-error-video-damage-picture-id845869662?k=20&m=845869662&s=612x612&w=0&h=IlYELzW8Ptb0BU4ziUvOpwmkfqq1kD4tRZJjKh5nHEc=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 300px;
+    height: 50px;
+    background: red;
+    position: relative;
+    margin-left: 400px;
+    animation: mymove 5s infinite;
+    text-align: center;
+    border-radius: 40px;
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 30 px;
+    text-shadow: 1px 2px 2px blueviolet;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+        left: 0px;
+        background: red;
+    }
+    25% {
+        top: 0px;
+        left: 100px;
+        background: blue;
+    }
+    50% {
+        top: 100px;
+        left: 100px;
+        background: yellow;
+    }
+    75% {
+        top: 100px;
+        left: 0px;
+        background: green;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background: red;
+    }
+}
+
+.main {
+    height: 250px;
+    width: 300px;
+    background-color: rgba(240, 248, 255, 0.23);
+    margin: 80px 0 0 440px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
